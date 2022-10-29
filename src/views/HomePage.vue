@@ -1,5 +1,5 @@
 <template>
-  <main class="page">
+  <main class="body">
     <HeaderBase />
   </main>
 </template>
@@ -13,11 +13,13 @@ export default {
 </script>
 
 <style lang="scss">
-.page {
+.body {
   margin: 0px auto;
-  max-width: 1078px;
-  min-height: 767px;
-  // background: #000000, url("../assets/bg/bg.png");
-  // background-color: grey;
+  max-width: 1440px;
+  // min-height: 1024px;
+  // background: url("../assets/bg/bg.png"), #000000;
+  background: #000000;
+  border: 1px solid white;
 }
 </style>
+<!-- url("https://raw.githubusercontent.com/Arximed-A/crypto_wallet/main/src/assets/bg/bgMenu.png") -->

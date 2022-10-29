@@ -1,5 +1,7 @@
 <template>
-  <router-view />
+  <div class="page">
+    <router-view />
+  </div>
 </template>
 
 <style lang="scss">
@@ -10,7 +12,13 @@
   font-weight: 500;
   color: white;
 }
+body {
+  margin: 0px;
+}
 .page {
-  background: #000000, url("./assets/bg/bg.png");
+  height: 100vh;
+  width: 100%;
+  // background: url("./assets/bg/bg.png") 100% no-repeat, #000000;
+  background: #000000;
 }
 </style>
