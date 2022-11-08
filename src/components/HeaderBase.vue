@@ -6,48 +6,58 @@
         <span class="logo__name logo__name_bold">Crypt</span>fest
       </h1>
     </div>
-    <span class="header__hello">Welcome Back, {{ name }}</span>
+    <span class="header__hello">Welcome Back, {{ userName }}</span>
     <div class="header__actions actions">
       <div class="actions__wrapper">
         <input type="text" class="actions__search" placeholder="Search" />
       </div>
-      <div class="actions__notification">
+      <a href="#" class="actions__notification">
         <img src="../assets/icons/notification.svg" alt="" />
-        <div v-show="alert" class="actions__alert">{{ alertNumber }}</div>
-      </div>
+        <div v-show="alert" class="actions__alert">{{ notification }}</div>
+      </a>
     </div>
     <div class="header__user user">
-      <span class="user__name">{{ name }}</span>
-      <div class="user__profile">
+      <span class="user__name">{{ userName }}</span>
+      <a href="#" class="user__profile">
         <img
           src="../assets/Ellipse1.png"
           alt="profile's picture"
           class="user__img"
         />
-      </div>
+      </a>
     </div>
+    <a href="#" class="header__menu">---</a>
   </header>
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: "HeaderBase",
   data() {
-    return {
-      name: "Arkhan",
-      alert: true,
-      alertNumber: 6,
-    };
+    return {};
+  },
+  computed: {
+    ...mapState({
+      userName: (state) => state.userName,
+      notification: (state) => state.notification,
+      alert: (state) => state.alert,
+    }),
   },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+$md4: 576px;
+$md3: 768px;
+$md2: 992px;
+$md1: 1200px;
 .header {
   height: 126px;
   display: flex;
   align-items: center;
-  padding: 0px 41px;
+
   &__logo {
     flex: 0 0 151px;
     margin: 0px 8.46% 0px 0px;
@@ -56,14 +66,38 @@ export default {
     font-family: "Roboto";
     font-size: 24px;
     font-weight: 700;
-    flex: 1 1 429px;
+    flex: 1 1 auto;
     margin: 0px 10px 0px 0px;
   }
   &__actions {
     flex: 0 1 327px;
   }
   &__user {
-    flex: 0 1 320px;
+    flex: 1 1 auto;
+  }
+  &__menu {
+    display: none;
+    text-decoration: none;
+  }
+  @media (max-width: $md1) {
+    &__logo {
+      flex: 1 0 auto;
+    }
+    &__hello {
+      display: none;
+    }
+  }
+  @media (max-width: $md2) {
+    &__menu {
+      display: block;
+    }
+    &__actions {
+      display: none !important;
+      // width: 1000px;
+    }
+    &__user {
+      display: none !important;
+    }
   }
 }
 .logo {
@@ -84,7 +118,7 @@ export default {
 }
 .actions {
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
   align-items: center;
   margin: 0px 10px 0px 0px;
   &__wrapper {
@@ -101,11 +135,9 @@ export default {
       background: url("../assets/icons/search.svg");
     }
   }
-  //========================================================================================================================================================
-
   &__search {
-    // width: 281px;
-    width: 100%;
+    // width: 200px;
+    width: 78.65%;
     height: 48px;
     border: none;
     outline: none;
@@ -114,6 +146,7 @@ export default {
     padding: 0px 10px 0px 60px;
   }
   &__notification {
+    //добавить анимацию при клике
     margin: 0px 0px 0px 20px;
     position: relative;
   }

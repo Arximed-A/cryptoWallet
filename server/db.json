@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Arkhan",
+      "avatar": "sdsd"
+    },
+    {
+      "id": 2,
+      "name": "Левый чувак",
+      "avatar": "sdsd"
+    }
+  ],
+  "rate": [
+    {
+      "id": 1,
+      "coin-name": "Bitcoin",
+      "quantity": 23.3,
+      "allocation": 71.68,
+      "img": 1
+    }
+  ]
+}
