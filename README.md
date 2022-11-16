@@ -1,19 +1,15 @@
-# тест
+# Крипто кошёлёк
 
-## Project setup
+Добрый день. Это моё учебный проект симуляции криптокошелька
+
+## Установка
 
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Запуск сервера и hot-reloads
 
 ```
 npm run dev
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
 ```
