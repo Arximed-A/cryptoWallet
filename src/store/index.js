@@ -1,12 +1,11 @@
 import { createStore } from "vuex";
 import axios from "axios";
-
+import db from "../../server/db.json";
 export default createStore({
   state: {
     id: 0,
     userName: null,
     url: "http://localhost:3000/",
-    // alert: false,
     notification: null,
     rateData: null,
     totalAssets: null,
@@ -40,6 +39,8 @@ export default createStore({
   },
   actions: {
     async getUser({ commit }) {
+      commit("setUserName", db.users[0]);
+      /* 
       const url = this.state.url + "users?id=" + this.state.id;
       await axios
         .get(url)
@@ -50,9 +51,12 @@ export default createStore({
           console.log(error);
         })
         .finally(() => {});
+				*/
     },
 
     async getRateDate({ commit }) {
+      commit("setRateDate", db.rate);
+      /*
       const url = this.state.url + "rate";
       await axios
         .get(url)
@@ -62,7 +66,7 @@ export default createStore({
         .catch((error) => {
           console.log(error);
         })
-        .finally(() => {});
+        .finally(() => {});*/
     },
 
     changeCurrentСurrency({ commit }, data) {
@@ -74,6 +78,7 @@ export default createStore({
     },
 
     async getDiagramData({ commit }) {
+      /*
       const url = this.state.url + "diagram";
       await axios
         .get(url)
@@ -83,7 +88,7 @@ export default createStore({
         .catch((error) => {
           console.log(error);
         })
-        .finally(() => {});
+        .finally(() => {});*/
     },
 
     createRandomDiagram({ commit }) {
@@ -104,7 +109,6 @@ export default createStore({
         do {
           obj.open = Math.floor(Math.random() * 100);
           obj.close = Math.floor(Math.random() * 100);
-          console.log(obj.open, obj.close);
         } while (obj.open + obj.close > 90 || obj.open < 10 || obj.close < 10);
         arr.push(obj);
       }
