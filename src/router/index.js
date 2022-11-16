@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import DashBoard from "../components/mainWindow/Dashboard.vue";
+import DashBoard from "../components/mainWindow/Dashboard/Dashboard.vue";
 import Trade from "../components/mainWindow/Trade.vue";
 import Deposits from "../components/mainWindow/Deposits.vue";
 import Protocols from "../components/mainWindow/Protocols.vue";

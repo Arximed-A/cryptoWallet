@@ -1,4 +1,4 @@
-<template>Protocols</template>
+<template>Странница Protocols находится в разработке</template>
 
 <script>
 export default {

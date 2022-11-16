@@ -1,4 +1,4 @@
-<template>trade</template>
+<template>Странница Trade находится в разработке</template>
 
 <script>
 export default {

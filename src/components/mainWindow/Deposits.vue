@@ -1,4 +1,4 @@
-<template>Deposits</template>
+<template>Странница Deposits находится в разработке</template>
 
 <script>
 export default {

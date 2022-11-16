@@ -29,23 +29,24 @@ export default {
       getUser: "getUser",
     }),
   },
-  async mounted() {
+  async created() {
     await this.getUser();
   },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .body {
-  margin: 0px auto;
+  // margin: 0px auto;
   // width: 56.15%;
-  max-width: 1440px;
+  flex: 0 0 1440px;
+  // max-width: 1440px;
   // height: 766px / 960px * 100%;
-  background: url("../assets/bg/bgMenu.png") 100% no-repeat, #000000;
-  // background: #000000;
+  min-height: 780px;
+  background: url("../assets/bg/bgMenu.png") 0 0 / 100% no-repeat, #000000;
   border: 1px solid white;
   border-radius: 40px;
-  padding: 0px 41px / 1440px * 100%;
+  padding: 0px 41px / 1440px * 100% 40px;
 }
 .wrapper {
   display: flex;

@@ -5,8 +5,8 @@
     <MenuItem name="Deposits" direction="deposits" icon="donate" />
     <MenuItem name="Protocols" direction="protocols" icon="protocols" />
     <MenuItem name="Settings" direction="settings" icon="setting" />
-    <MenuItem name="Profile" direction="profile" icon="user" />
-    <MenuItem name="Log Out" icon="logout" class="log" />
+    <MenuItem name="Profile" direction="profile" icon="user" class="space" />
+    <MenuItem name="Log Out" icon="logout" />
   </aside>
 </template>
 
@@ -22,8 +22,9 @@ export default {
 .sidebar {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
-.log {
+.space {
   flex: 1 1 auto;
 }
 </style>

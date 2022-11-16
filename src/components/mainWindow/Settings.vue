@@ -1,4 +1,4 @@
-<template>Settings</template>
+<template>Странница Settings находится в разработке</template>
 
 <script>
 export default {

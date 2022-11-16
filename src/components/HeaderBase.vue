@@ -13,7 +13,9 @@
       </div>
       <a href="#" class="actions__notification">
         <img src="../assets/icons/notification.svg" alt="" />
-        <div v-show="alert" class="actions__alert">{{ notification }}</div>
+        <div v-show="notification" class="actions__alert">
+          {{ notification }}
+        </div>
       </a>
     </div>
     <div class="header__user user">
@@ -26,7 +28,6 @@
         />
       </a>
     </div>
-    <a href="#" class="header__menu">---</a>
   </header>
 </template>
 
@@ -42,7 +43,7 @@ export default {
     ...mapState({
       userName: (state) => state.userName,
       notification: (state) => state.notification,
-      alert: (state) => state.alert,
+      // alert: (state) => state.alert,
     }),
   },
 };
@@ -75,10 +76,6 @@ $md1: 1200px;
   &__user {
     flex: 1 1 auto;
   }
-  &__menu {
-    display: none;
-    text-decoration: none;
-  }
   @media (max-width: $md1) {
     &__logo {
       flex: 1 0 auto;
@@ -88,9 +85,6 @@ $md1: 1200px;
     }
   }
   @media (max-width: $md2) {
-    &__menu {
-      display: block;
-    }
     &__actions {
       display: none !important;
       // width: 1000px;

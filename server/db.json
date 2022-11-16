@@ -1,23 +1,76 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": 0,
       "name": "Arkhan",
-      "avatar": "sdsd"
+      "avatar": "sdsd",
+      "notification": 2,
+      "totalAssets": 87.743,
+      "totalDeposits": 78.342,
+      "apy": 12.3
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Левый чувак",
-      "avatar": "sdsd"
+      "avatar": "sdsd",
+      "notification": 0,
+      "total-assets": 87.743,
+      "total-deposits": 78.342,
+      "apy": 12.3
     }
   ],
   "rate": [
     {
+      "id": 0,
+      "name": "Bitcoin",
+      "quantity": "23,3",
+      "allocation": "91,68",
+      "img": "bitcoin.svg",
+      "shortcut": "BTC"
+    },
+    {
       "id": 1,
-      "coin-name": "Bitcoin",
-      "quantity": 23.3,
-      "allocation": 71.68,
-      "img": 1
+      "name": "Ethereum",
+      "quantity": "63,3",
+      "allocation": "71,68",
+      "img": "ethereum.svg",
+      "shortcut": "ETH"
+    },
+    {
+      "id": 2,
+      "name": "Shiba",
+      "quantity": "13,3",
+      "allocation": "31,68",
+      "img": "shiba.svg",
+      "shortcut": "SHB"
+    },
+    {
+      "id": 3,
+      "name": "Solona",
+      "quantity": "53,3",
+      "allocation": "51,68",
+      "img": "solona.svg",
+      "shortcut": "SLN"
+    },
+    {
+      "id": 4,
+      "name": "Tether",
+      "quantity": "83,3",
+      "allocation": "11,68",
+      "img": "tether.svg",
+      "shortcut": "TTR"
     }
+  ],
+  "diagram": [
+    { "id": 0, "max": 491, "min": 467, "open": 57, "close": 274 },
+    { "id": 1, "max": 373, "min": 19, "open": 124, "close": 96 },
+    { "id": 2, "max": 531, "min": 472, "open": 223, "close": 561 },
+    { "id": 3, "max": 432, "min": 27, "open": 586, "close": 579 },
+    { "id": 4, "max": 76, "min": 83, "open": 268, "close": 287 },
+    { "id": 5, "max": 561, "min": 43, "open": 410, "close": 19 },
+    { "id": 6, "max": 141, "min": 212, "open": 457, "close": 75 },
+    { "id": 7, "max": 475, "min": 208, "open": 215, "close": 590 },
+    { "id": 8, "max": 360, "min": 495, "open": 527, "close": 262 },
+    { "id": 9, "max": 165, "min": 27, "open": 286, "close": 236 }
   ]
 }

@@ -1,14 +1,16 @@
 <template>
-  <router-link :to="direction" class="link">
-    <button class="button">
-      <img
-        class="img"
-        :src="require(`./../../assets/icons/${icon}.svg`)"
-        alt="icon"
-      />
-      {{ name }}
-    </button>
-  </router-link>
+  <div>
+    <router-link :to="direction" class="link">
+      <button class="button">
+        <img
+          class="img"
+          :src="require(`./../../assets/icons/${icon}.svg`)"
+          alt="icon"
+        />
+        {{ name }}
+      </button>
+    </router-link>
+  </div>
 </template>
 
 <script>
