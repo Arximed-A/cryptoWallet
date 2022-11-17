@@ -1,4 +1,6 @@
-<template>Странница Trade находится в разработке</template>
+<template>
+  <section class="conteiner">Странница Trade находится в разработке</section>
+</template>
 
 <script>
 export default {

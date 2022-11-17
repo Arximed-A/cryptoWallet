@@ -1,4 +1,8 @@
-<template>Странница Protocols находится в разработке</template>
+<template>
+  <section class="conteiner">
+    Странница Protocols находится в разработке
+  </section>
+</template>
 
 <script>
 export default {

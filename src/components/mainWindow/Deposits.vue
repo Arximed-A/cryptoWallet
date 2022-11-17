@@ -1,4 +1,6 @@
-<template>Странница Deposits находится в разработке</template>
+<template>
+  <section class="conteiner">Странница Deposits находится в разработке</section>
+</template>
 
 <script>
 export default {
@@ -6,4 +8,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped></style>

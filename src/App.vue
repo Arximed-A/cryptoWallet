@@ -39,7 +39,7 @@ li {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
   background: url("./assets/bg/bg.png") 0 0 / 100% no-repeat, #000000;
 }
 </style>

@@ -43,15 +43,9 @@ export default {
   name: "Diagram",
   components: { Candlestick },
   data() {
-    return {
-      componentKey: 0,
-    };
+    return {};
   },
-  watch: {
-    items() {
-      this.componentKey++;
-    },
-  },
+
   methods: {
     ...mapActions({
       getDiagramData: "getDiagramData",
@@ -96,7 +90,7 @@ export default {
   padding: 0px 0px 0px 10px;
   display: flex;
   justify-content: space-between;
-  background: url("./../../../assets/line.svg") 0 0 / 100% no-repeat;
+  background: url("./../../../assets/line.svg") 0 0 / 100% auto no-repeat;
 }
 
 .date {

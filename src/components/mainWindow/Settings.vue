@@ -1,4 +1,6 @@
-<template>Странница Settings находится в разработке</template>
+<template>
+  <section class="conteiner">Странница Settings находится в разработке</section>
+</template>
 
 <script>
 export default {
