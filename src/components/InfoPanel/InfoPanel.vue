@@ -1,6 +1,6 @@
 <template>
   <Rate />
-  <!-- <Social /> -->
+  <Social />
 </template>
 
 <script>

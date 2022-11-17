@@ -15,7 +15,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+// $md4: 576px;
+// $md3: 768px;
+$md2: 1024px;
+$md1: 1200px;
 .container {
   height: 281px;
   background: rgba(29, 29, 29, 0.6);
@@ -25,6 +29,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: $md1) {
+    padding: 10px;
+  }
 }
 .title {
   margin: 0px 0px 12px 0px;

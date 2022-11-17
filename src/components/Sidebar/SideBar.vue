@@ -19,6 +19,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// $md4: 576px;
+// $md3: 768px;
+$md2: 1024px;
+$md1: 1200px;
 .sidebar {
   display: flex;
   flex-direction: column;

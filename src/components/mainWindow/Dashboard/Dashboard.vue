@@ -63,13 +63,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// $md4: 576px;
+// $md3: 768px;
+$md2: 1024px;
+$md1: 1200px;
 .conteiner {
   width: 100%;
-  height: 100%;
+  min-height: 593px;
   background: rgba(28, 28, 28, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 45px;
+  @media (max-width: $md1) {
+    padding: 3%;
+  }
 }
 .header {
   display: flex;

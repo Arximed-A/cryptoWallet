@@ -41,6 +41,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// $md4: 576px;
+// $md3: 768px;
+$md2: 1024px;
+$md1: 1200px;
 .button {
   width: 100%;
   height: 39px;
@@ -52,11 +56,17 @@ export default {
   text-transform: capitalize;
   margin: 0px 0px 20px 0px;
   font-size: 18px;
+  @media (max-width: $md1) {
+    text-align: center;
+  }
 }
 .container {
   padding: 30px;
   background: rgba(28, 28, 28, 0.6);
   border-radius: 16px;
   margin: 0px 0px 30px 0px;
+  @media (max-width: $md1) {
+    padding: 10px;
+  }
 }
 </style>

@@ -28,6 +28,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// $md4: 576px;
+// $md3: 768px;
+$md2: 1024px;
+$md1: 1200px;
+
 .box {
   display: flex;
   align-items: center;
@@ -41,10 +46,18 @@ export default {
   align-items: center;
   justify-content: center;
   margin: 0px 9px 0px 0px;
+  @media (max-width: $md1) {
+    width: 40px;
+    height: 40px;
+  }
 }
 .img {
   height: 32px;
   width: 32px;
+  @media (max-width: $md1) {
+    height: 25px;
+    width: 25px;
+  }
 }
 .description {
 }
@@ -55,5 +68,8 @@ export default {
 .number {
   font-size: 24px;
   font-weight: 700;
+  @media (max-width: $md1) {
+    font-size: 16px;
+  }
 }
 </style>

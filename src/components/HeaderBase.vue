@@ -62,6 +62,10 @@ $md1: 1200px;
   &__logo {
     flex: 0 0 151px;
     margin: 0px 8.46% 0px 0px;
+    @media (max-width: $md1) {
+      margin: 0px 0px 0px 0px;
+      flex: 0 0 250px;
+    }
   }
   &__hello {
     font-family: "Roboto";
@@ -69,28 +73,20 @@ $md1: 1200px;
     font-weight: 700;
     flex: 1 1 auto;
     margin: 0px 10px 0px 0px;
-  }
-  &__actions {
-    flex: 0 1 327px;
-  }
-  &__user {
-    flex: 1 1 auto;
-  }
-  @media (max-width: $md1) {
-    &__logo {
-      flex: 1 0 auto;
-    }
-    &__hello {
+    @media (max-width: $md1) {
       display: none;
     }
   }
-  @media (max-width: $md2) {
-    &__actions {
-      display: none !important;
-      // width: 1000px;
+  &__actions {
+    flex: 0 1 327px;
+    @media (max-width: $md1) {
+      flex: 1 1 auto;
     }
-    &__user {
-      display: none !important;
+  }
+  &__user {
+    flex: 1 1 auto;
+    @media (max-width: $md1) {
+      flex: 0 1 auto;
     }
   }
 }
@@ -118,6 +114,9 @@ $md1: 1200px;
   &__wrapper {
     position: relative;
     flex: 0 0 281px;
+    @media (max-width: $md1) {
+      flex: 1 1 auto;
+    }
     &::before {
       content: "";
       display: block;
@@ -130,7 +129,6 @@ $md1: 1200px;
     }
   }
   &__search {
-    // width: 200px;
     width: 78.65%;
     height: 48px;
     border: none;
@@ -138,6 +136,9 @@ $md1: 1200px;
     background: #1c1f2599;
     border-radius: 16px;
     padding: 0px 10px 0px 60px;
+    @media (max-width: $md1) {
+      width: 75%;
+    }
   }
   &__notification {
     //добавить анимацию при клике
@@ -171,6 +172,9 @@ $md1: 1200px;
     font-size: 18px;
     font-weight: 500;
     margin: 0px 24px 0px 0px;
+    @media (max-width: $md1) {
+      display: none;
+    }
   }
   &__profile {
     height: 48px;

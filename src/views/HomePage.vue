@@ -36,30 +36,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// $md4: 576px;
+// $md3: 768px;
+$md2: 1024px;
+$md1: 1200px;
 .body {
-  // margin: 0px auto;
-  // width: 56.15%;
-  flex: 0 0 1440px;
-  // max-width: 1440px;
-  // height: 766px / 960px * 100%;
-  min-height: 780px;
+  flex: 0 0 auto;
+  // width: 1440px;
+  max-width: 1440px;
+  height: 767px / 960px * 100%;
   background: url("../assets/bg/bgMenu.png") 0 0 / 100% no-repeat, #000000;
   border: 1px solid white;
   border-radius: 40px;
-  padding: 0px 41px / 1440px * 100% 40px;
+  padding: 0px 40px / 1440px * 100% 40px;
+  @media (max-width: $md1) {
+    width: 99%;
+    padding: 0px 10px 10px;
+  }
 }
 .wrapper {
   display: flex;
   justify-content: space-between;
 
   &__bar {
-    flex: 0 0 233px / 1440px * 100%;
+    flex: 0 1 233px;
+    @media (max-width: $md2) {
+      display: none;
+    }
   }
   &__main {
-    flex: 0 0 773px / 1440px * 100%;
+    flex: 1 1 773px / 1440px * 100%;
+    margin: 0px 30px;
   }
   &__info {
-    flex: 0 0 284px / 1440px * 100%;
+    flex: 0 1 284px;
   }
 }
 </style>

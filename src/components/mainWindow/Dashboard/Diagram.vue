@@ -10,7 +10,7 @@
         <span class="limits__item text">$ 100</span>
       </div>
       <div class="diagram__chart chart">
-        <template v-for="item of items" :key="componentKey">
+        <template v-for="item of items" :key="item.id">
           <!-- плохое решение с ключом -->
           <Candlestick
             :max="item.max"
